@@ -1,0 +1,20 @@
+// This program calculates the factorial of a number
+
+import java.util.Scanner; // Import the Scanner class for user input
+
+public class Factorial {
+    public static void main(String[] args) {
+        int num, fact = 1; // Declare variables for the input number and factorial
+        Scanner scan = new Scanner(System.in); // Create a Scanner object for user input
+
+        System.out.print("Enter a number: "); // Prompt the user to enter a number
+        num = scan.nextInt(); // Read the input number from the user
+
+        for (int i = 1; i <= num; i++) { // Loop through all numbers from 1 to the input number
+            fact = fact * i; // Calculate the factorial by multiplying all numbers together
+        }
+
+        System.out.println("Factorial of " + num + " is: " + fact); // Print the result to the console
+        scan.close(); // Close the Scanner object to free up resources
+    }
+}
